@@ -22,3 +22,11 @@ runMain({ io })
     process.exitCode = 1;
   })
   .finally(() => rl.close());
+
+function credit(balance, amount) {
+  return balance + amount;
+}
+
+function debit(balance, amount) {
+  return balance - amount;
+}
